@@ -9,8 +9,5 @@ export const getCovidEvent = async () => {
   const dates = last30.map(({ date }) => date);
   const positives = last30.map(({ positive }) => positive);
 
-  console.log(dates);
-  console.log(positives);
-
   makeChart(dates, positives);
 };
